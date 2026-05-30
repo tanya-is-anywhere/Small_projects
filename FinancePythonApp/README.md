@@ -76,13 +76,35 @@
 - Node.js 18+
 - PostgreSQL 14+
 - npm 9+
-
+- Скопируйте файл [.env.example](backend%2F.env.example), задав ему название просто .env
+- Заполните недостающие переменные внутри этого файла согласно данным, которые вы вносили при регистрации пользователя в PostgreSQL 
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/your-username/finance-tracker.git
-cd finance-tracker
+git clone https://github.com/tanya-is-anywhere/Small_projects.git
+cd FinancePythonApp
 ```
+### 2. Выполните SQL скрипт для создания базы данных внутри редактора (использовала DBeaver)
+
+```
+Скрипт находится в FinancePythonApp\backend\database\schema.sql
+```
+### 3. Установка зависимостей и запуск Backend
+
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+flask run
+```
+### 4. Запуск Frontend (в отдельном терминале)
+```bash
+cd frontend
+npm install
+npx vite --host --force # введите y для продолжения, как указано в подсказке
+```
+### 5. Перейдите по ссылке, которую вам даст vite и попадёте на страницу входа
 
 ## Структура проекта
 ```
