@@ -1,4 +1,4 @@
-CREATE DATABASE finance_tracker;
+--CREATE DATABASE finance_tracker;
 
 -- Таблица пользователей
 CREATE TABLE public.users (

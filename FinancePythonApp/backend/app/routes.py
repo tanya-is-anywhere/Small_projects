@@ -11,6 +11,11 @@ transactions_bp = Blueprint('transactions', __name__)
 @auth_bp.route('/register', methods=['POST'])
 def register():
     data = request.json
+
+    existing_user = User.query.filter_by(username=data['username']).first()
+    if existing_user:
+        return jsonify({'error': 'Username already exists'}), 409
+
     hashed_pw = generate_password_hash(data['password'])
     user = User(username=data['username'], password_hash=hashed_pw)
     db.session.add(user)
