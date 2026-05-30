@@ -196,12 +196,12 @@ Content-Type: application/json
 ```
 ### Скриншоты
 #### Страница входа
-![Страница входа](docs\img.png)
+![Страница входа](FinancePythonApp\docs\img.png)
 #### Страница регистрации
-![Страница регистрации](docs\img_1.png)
+![Страница регистрации](FinancePythonApp\docs\img_1.png)
 #### Главная страница
-![Главная страница](docs\img_2.png)
+![Главная страница](FinancePythonApp\docs\img_2.png)
 #### Финансовый отчёт
-![Финансовый отчёт](docs\img_3.png)
+![Финансовый отчёт](FinancePythonApp\docs\img_3.png)
 ### Автор
 Шилинцева Татьяна - https://github.com/tanya-is-anywhere
