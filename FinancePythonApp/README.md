@@ -121,7 +121,7 @@ finance-tracker/
 │   │   ├── models.py            # Модели SQLAlchemy
 │   │   └── routes.py            # API эндпоинты
 │   ├── tests/
-│   │   ├── __init__.py          # Фабрика приложения Flask
+│   │   ├── __init__.py              # Инициализация пакета
 │   │   ├── conftest.py              # Фикстуры pytest (клиент, БД в памяти, токены)
 │   │   ├── factories.py             # Вспомогательные классы для тестирования БД
 │   │   ├── test_auth.py             # Тесты аутентификации
@@ -229,8 +229,7 @@ pytest tests/ -v
 │   └── Dockerfile              # Multi-stage: тесты → продакшен
 ├── frontend/
 │   ├── Dockerfile              # Сборка React → Nginx
-│   └── nginx.conf              # Конфигурация Nginx
-└── init.sql                    # Инициализация БД
+└── └── nginx.conf              # Конфигурация Nginx
 ```
 ### Запуск (для удобства - в фоновом режиме)
 ```bash
